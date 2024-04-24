@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="camera_content_description">Camera Button</string>
+    <string name="home_content_description">Home Button</string>
+    <string name="water_content_description">Water Drop Button</string>
+    <string name="search_content_description">Search Button</string>
+    <string name="plus_content_description">Plus Button</string>
+    <string name="shelf_content_description">Shelf</string>
+
+    <string name="notif_time_picker">Set Time</string>
+    <string name="notif_name_picker">Set Plants</string>
+    <string name="notification_screen_name">Set Watering Reminders</string>
+    <string name="default_time">No time set</string>
+    <string name="default_plants">Input plants..</string>
+    <string name="default_place">Input place name..</string>
+    <string name="create_notif">Create New Notification</string>
+    <string name="empty_input_field">Plant input field is empty</string>
+    <string name="weather_screen_name">Weather Warnings</string>
+    <string name="default_weather_text">Weather warning text</string>
+    <string name="refresh_weather_data">Refresh weather data</string>
+    <string name="gps_unavailable">Input location is used if GPS service cannot be reached.</string>
+    <string name="notif_channel_description">Notifications for plant care</string>
+    <string name="notif_channel_name">PlantPalNotifications</string>
+</resources>

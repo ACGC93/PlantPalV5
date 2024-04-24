@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/camera_pixel"
+        android:contentDescription="@string/camera_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/water"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/water_drop"
+        android:contentDescription="@string/water_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pixel_house"
+        android:contentDescription="@string/home_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/camera"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toEndOf="@+id/water" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="106dp"
+        android:background="@drawable/plantpal_logo"
+        android:contentDescription="logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/shelf"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/pixel_shelf"
+        android:contentDescription="@string/shelf_content_description"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ListView
+        android:id="@+id/plant_list"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_list" />
+
+    <ImageButton
+        android:id="@+id/one"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginStart="76dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <ImageButton
+        android:id="@+id/two"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+
+    <ImageButton
+        android:id="@+id/three"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageButton
+        android:id="@+id/four"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginStart="76dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <ImageButton
+        android:id="@+id/five"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/plus_button"
+
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageButton
+        android:id="@+id/six"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageButton
+        android:id="@+id/seven"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_marginStart="76dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <ImageButton
+        android:id="@+id/eight"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/plus_button"
+
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageButton
+        android:id="@+id/nine"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/plus_button"
+        android:contentDescription="@string/plus_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shelf" />
+
+    <ImageButton
+        android:id="@+id/WeatherButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/camera"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:srcCompat="@drawable/weather_navbar_icon_1_png" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
